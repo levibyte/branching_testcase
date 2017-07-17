@@ -46,15 +46,15 @@ void check()
 {
        
     
-    assert(b1.visited() > 0);
-    assert(b2.visited() > 0);
-    assert(b3.visited() > 0);
-    assert(b4.visited() > 0);
-    assert(b5.visited() > 0);
-    assert(b6.visited() > 0);
-    assert(b7.visited() > 0);
-    assert(b8.visited() > 0);
-    assert(b9.visited() > 0);
+    assert(b1.visited() == 1);
+    assert(b2.visited() == 1);
+    assert(b3.visited() == 1);
+    assert(b4.visited() == 1);
+    assert(b5.visited() == 1);
+    assert(b6.visited() == 1);
+    assert(b7.visited() == 1);
+    assert(b8.visited() == 1);
+    assert(b9.visited() == 1);
     
 }
 
