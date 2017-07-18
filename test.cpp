@@ -42,10 +42,9 @@ void process_test(unsigned int totalAccounts, unsigned int loanTypeCount)
 }
 
 
+//checking each branch is reached, and only 1 time
 void check()
 {
-       
-    
     assert(b1.visited() == 1);
     assert(b2.visited() == 1);
     assert(b3.visited() == 1);
@@ -67,10 +66,13 @@ int main() {
     process_test(5,2);
     process_test(4,2);
     process_test(4,1);
-     //need for full coverage.
-    process_test(0,1);
     process_test(0,0);
-      
+     //need for full coverage , but will be not reached.
+    process_test(0,1);
+    
+    //comment for unit-test to pass
+    process_test(5,5);
+  
     check();
 }
 
