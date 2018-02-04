@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cassert>
 
-enum accountDiversityGrade { A , B , C , D, null };
+enum ADC { A , B , C , D, null };
 
 class branch
 {
@@ -19,18 +19,18 @@ class branch
 branch b1,b2,b3,b4,b5,b6,b7,b8,b9;
 
 
-void process_test(unsigned int totalAccounts, unsigned int loanTypeCount) 
+void process_test(unsigned int ta, unsigned int lc) 
 {
-  accountDiversityGrade diversity;
+  ADC diversity;
   
-    b1.set(totalAccounts > 20);
-    b2.set(loanTypeCount >= 4);
-    b3.set(totalAccounts> 10);
-    b4.set(loanTypeCount == 3);
-    b5.set(totalAccounts>= 5);
-    b6.set(loanTypeCount == 2);
-    b7.set(totalAccounts > 0);
-    b8.set(loanTypeCount == 1);
+    b1.set(ta > 20);
+    b2.set(lc >= 4);
+    b3.set(ta > 10);
+    b4.set(lc == 3);
+    b5.set(ta >= 5);
+    b6.set(lc == 2);
+    b7.set(ta > 0);
+    b8.set(lc == 1);
     b9.set(true);
   
     
